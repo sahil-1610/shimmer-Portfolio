@@ -1,4 +1,3 @@
-
 "use client";
 import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
@@ -71,7 +70,7 @@ export const BackgroundBeamsWithCollision = ({
     <div
       ref={parentRef}
       className={cn(
-        "h-96 md:h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-black dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden",
+        "min-h-[calc(100vh-200px)] md:min-h-[40rem] bg-gradient-to-b from-white to-neutral-100 dark:from-black dark:to-neutral-800 relative flex items-center w-full justify-center overflow-hidden py-8 md:py-12",
         className
       )}
     >

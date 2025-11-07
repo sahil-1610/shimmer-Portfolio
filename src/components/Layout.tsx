@@ -15,20 +15,23 @@ const Layout = ({ children, title }: LayoutProps) => {
   const isMobile = useIsMobile();
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground overflow-x-hidden">
       {!isMobile && <Sidebar />}
       {isMobile && <MobileNav />}
 
+      {/* Theme Toggle - Fixed Position for Desktop */}
+      {!isMobile && (
+        <div className="fixed top-4 right-4 md:top-6 md:right-8 lg:top-8 lg:right-12 z-[100]">
+          <ThemeToggle />
+        </div>
+      )}
+
       <main
         className={`${
-          !isMobile ? "ml-64" : "ml-0"
-        } min-h-screen flex-1 p-4 md:p-8`}
+          !isMobile ? "ml-0 md:ml-64" : "ml-0"
+        } min-h-screen flex-1 w-full max-w-[100vw]`}
       >
-        <header className="flex justify-end items-center mb-6 md:mb-10 animate-fade-in">
-          <ThemeToggle />
-        </header>
-
-        <div className="animate-fade-in pb-16">
+        <div className="animate-fade-in pb-8 w-full pt-16 md:pt-20">
           <TracingBeam>{children}</TracingBeam>
         </div>
       </main>

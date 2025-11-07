@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { FocusCards } from "@/components/ui/focus-cards";
 import {
   User,
@@ -119,13 +120,20 @@ const About = () => {
 
   return (
     <Layout title="About">
-      <div className="max-w-4xl mx-auto">
+      <SEO
+        title="About Sahil Tiwari | Software Developer & AI Enthusiast"
+        description="Learn about Sahil Tiwari, a passionate Software Developer with expertise in AI integration, full-stack development, MERN stack, and scalable web applications. View experience, skills, and education."
+        keywords="about Sahil Tiwari, software developer, AI developer, full stack developer, MERN stack, React expert, web developer, computer science"
+      />
+      <div className="max-w-5xl mx-auto w-full">
         {/* Hero Card Gallery */}
-        <FocusCards cards={cards} />
+        <div className="mb-8">
+          <FocusCards cards={cards} />
+        </div>
 
-        <h1 className="section-title mb-8">
-          <User size={24} className="text-primary" />
-          About Me
+        <h1 className="section-title mb-6 md:mb-8">
+          <User size={20} className="text-primary flex-shrink-0" />
+          <span className="text-xl sm:text-2xl md:text-3xl">About Me</span>
         </h1>
         {/* Summary */}
         <div className="mb-12 animate-fade-in">

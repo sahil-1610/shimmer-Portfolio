@@ -2,6 +2,8 @@ import {
   Dialog,
   DialogContent,
   DialogHeader,
+  DialogTitle,
+  DialogDescription,
   DialogClose,
 } from "@/components/ui/dialog";
 import { X } from "lucide-react";
@@ -22,7 +24,7 @@ export default function ProfileImageDialog({
         "Every image tells a story, and the depth and creativity here are absolutely inspiring. Truly a masterpiece in every frame.",
       name: "Sahil Tiwari",
       designation: "Software Developer",
-      src: "images/ChatGPT Image Mar 28, 2025, 01_23_07 AM.png",
+      src: "/images/ChatGPT Image Mar 28, 2025, 01_23_07 AM.png",
     },
     {
       quote:
@@ -58,6 +60,10 @@ export default function ProfileImageDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[900px] p-0">
         <DialogHeader className="p-6 relative">
+          <DialogTitle className="sr-only">Profile Gallery</DialogTitle>
+          <DialogDescription className="sr-only">
+            A gallery showcasing various profile images and creative work
+          </DialogDescription>
           <DialogClose className="absolute right-4 top-4 rounded-sm opacity-70 hover:opacity-100">
             <X className="h-4 w-4" />
             <span className="sr-only">Close</span>

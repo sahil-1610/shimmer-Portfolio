@@ -169,4 +169,157 @@ export const articles: Article[] = [
       ],
     },
   },
+  {
+    id: 8,
+    title:
+      "Understanding Model Context Protocol (MCP): The Future of AI Integration",
+    description:
+      "Deep dive into Anthropic's Model Context Protocol - how it works, why it matters, and how to build MCP servers for seamless AI tool integration.",
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2070&auto=format&fit=crop",
+    tags: ["AI", "MCP", "Anthropic", "Claude"],
+    date: "October 15, 2025",
+    content: {
+      paragraphs: [
+        "The Model Context Protocol (MCP) is revolutionizing how AI applications interact with external tools and data sources. Developed by Anthropic, MCP provides a standardized way for AI models like Claude to access databases, APIs, and custom tools in a secure and efficient manner.",
+        "In this comprehensive guide, we'll explore the architecture of MCP, how to build custom MCP servers, and integrate them with AI applications. We'll cover everything from basic setup to advanced use cases like database queries, file system access, and API integrations.",
+        "MCP servers act as bridges between AI models and your data sources, providing a consistent interface that makes it easy to extend AI capabilities. We'll walk through building a practical MCP server that connects to a database and exposes data through a clean, type-safe interface.",
+      ],
+      keyPoints: [
+        "Understand the Model Context Protocol architecture and its benefits",
+        "Build custom MCP servers to connect AI models with external tools",
+        "Implement secure authentication and data access patterns",
+        "Deploy MCP servers in production environments",
+        "Integrate MCP with popular AI applications and frameworks",
+      ],
+    },
+  },
+  {
+    id: 9,
+    title: "Tokenization Explained: How AI Models Process Your Text",
+    description:
+      "A comprehensive guide to tokenization in Large Language Models. Learn about BPE, WordPiece, token limits, and how to optimize your prompts for better results.",
+    image:
+      "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?q=80&w=2074&auto=format&fit=crop",
+    tags: ["AI", "Tokenization", "LLM", "NLP"],
+    date: "September 28, 2025",
+    content: {
+      paragraphs: [
+        "Tokenization is the fundamental process by which AI language models break down text into manageable pieces. Understanding tokenization is crucial for optimizing costs, managing context windows, and crafting effective prompts.",
+        "Different models use different tokenization strategies. GPT models use Byte Pair Encoding (BPE), while BERT uses WordPiece. Each approach has its own trade-offs in terms of vocabulary size, compression efficiency, and handling of rare words or special characters.",
+        "In practical applications, token limits directly impact what you can achieve with AI models. We'll explore strategies for counting tokens, optimizing prompts to fit within limits, and techniques like chunking and summarization to work with large documents.",
+        "We'll also dive into advanced topics like special tokens, token embeddings, and how tokenization affects model performance across different languages and domains.",
+      ],
+      keyPoints: [
+        "Understand how different tokenization algorithms work (BPE, WordPiece, SentencePiece)",
+        "Learn to calculate and optimize token usage in your applications",
+        "Master techniques for working within token limits effectively",
+        "Understand the relationship between tokens and model costs",
+        "Implement token-aware text processing in your AI applications",
+      ],
+    },
+  },
+  {
+    id: 10,
+    title: "Mastering Prompt Engineering: From Zero to Advanced Techniques",
+    description:
+      "Complete guide to prompt engineering for AI applications. Learn zero-shot, few-shot, chain-of-thought prompting, and how to build reliable AI workflows.",
+    image:
+      "https://images.unsplash.com/photo-1677756119517-756a188d2d94?q=80&w=2050&auto=format&fit=crop",
+    tags: ["AI", "Prompt Engineering", "GPT", "Claude"],
+    date: "November 5, 2025",
+    content: {
+      paragraphs: [
+        "Prompt engineering is the art and science of crafting instructions that get the best results from AI language models. Whether you're building chatbots, content generators, or AI-powered analytics tools, mastering prompt engineering is essential for success.",
+        "We'll start with the fundamentals: zero-shot prompting (asking the model directly) and few-shot prompting (providing examples). You'll learn when to use each approach and how to structure examples for maximum effectiveness.",
+        "Advanced techniques like chain-of-thought prompting encourage models to show their reasoning process, leading to more accurate results on complex tasks. We'll also cover role prompting, system messages, and temperature tuning to control model behavior.",
+        "Real-world applications require robust prompt engineering. We'll explore prompt templates, dynamic variable injection, error handling, and testing strategies to ensure your AI applications work reliably in production.",
+      ],
+      keyPoints: [
+        "Master fundamental prompting techniques: zero-shot, few-shot, and chain-of-thought",
+        "Learn to structure prompts for consistent, high-quality outputs",
+        "Implement advanced patterns like role prompting and prompt chaining",
+        "Build reliable AI workflows with proper error handling and validation",
+        "Optimize prompts for different models (GPT-4, Claude, Gemini) and use cases",
+        "Understand prompt injection risks and security best practices",
+      ],
+    },
+  },
+  {
+    id: 11,
+    title: "Building Production-Ready AI Agents with LangChain and TypeScript",
+    description:
+      "Learn to build autonomous AI agents that can use tools, manage memory, and chain multiple operations. Complete with real-world examples and best practices.",
+    image:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2065&auto=format&fit=crop",
+    tags: ["AI", "LangChain", "TypeScript", "Agents"],
+    date: "October 22, 2025",
+    content: {
+      paragraphs: [
+        "AI agents represent the next evolution in AI applications - systems that can autonomously plan, use tools, and accomplish complex tasks. With LangChain and TypeScript, building production-ready agents has never been more accessible.",
+        "We'll explore the architecture of AI agents, including the ReAct pattern (Reasoning + Acting), tool usage, and memory management. You'll learn how to give your agents access to APIs, databases, and custom functions while maintaining security and control.",
+        "The guide covers practical implementations: customer service agents, data analysis assistants, and automation workflows. We'll tackle real challenges like error recovery, infinite loops, and cost optimization.",
+        "Advanced topics include multi-agent systems, human-in-the-loop patterns, and deploying agents to production with proper monitoring and observability.",
+      ],
+      keyPoints: [
+        "Build autonomous AI agents using LangChain and TypeScript",
+        "Implement tool usage, memory systems, and planning capabilities",
+        "Handle errors, edge cases, and prevent common agent failures",
+        "Deploy and monitor AI agents in production environments",
+        "Optimize costs and performance for agent-based systems",
+      ],
+    },
+  },
+  {
+    id: 12,
+    title:
+      "Vector Databases & Embeddings: Building Semantic Search from Scratch",
+    description:
+      "Complete guide to vector databases, embeddings, and semantic search. Learn how to build RAG applications with Pinecone, Weaviate, or Supabase pgvector.",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=2034&auto=format&fit=crop",
+    tags: ["AI", "Vector DB", "Embeddings", "RAG"],
+    date: "October 8, 2025",
+    content: {
+      paragraphs: [
+        "Vector databases and embeddings are the backbone of modern AI applications. They enable semantic search, recommendation systems, and Retrieval-Augmented Generation (RAG) - all crucial for building AI apps that work with your own data.",
+        "We'll start by understanding what embeddings are and how they capture semantic meaning. You'll learn to generate embeddings using OpenAI, Cohere, or open-source models, and understand the trade-offs between different approaches.",
+        "The guide covers popular vector databases including Pinecone, Weaviate, Qdrant, and Supabase pgvector. We'll build a complete RAG application that can answer questions based on your documents with proper chunking, retrieval, and re-ranking strategies.",
+        "Advanced topics include hybrid search (combining semantic and keyword search), metadata filtering, and optimizing retrieval quality with techniques like HyDE and query expansion.",
+      ],
+      keyPoints: [
+        "Understand embeddings and how they represent semantic meaning",
+        "Choose and implement the right vector database for your use case",
+        "Build production-ready RAG applications with proper chunking strategies",
+        "Optimize retrieval quality with advanced techniques and re-ranking",
+        "Handle updates, deletions, and maintain vector database performance at scale",
+      ],
+    },
+  },
+  {
+    id: 13,
+    title:
+      "Fine-Tuning LLMs: When and How to Customize AI Models for Your Use Case",
+    description:
+      "Comprehensive guide to fine-tuning Large Language Models. Learn when fine-tuning is necessary, how to prepare datasets, and deploy custom models.",
+    image:
+      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=2070&auto=format&fit=crop",
+    tags: ["AI", "Fine-Tuning", "Machine Learning", "LLM"],
+    date: "November 1, 2025",
+    content: {
+      paragraphs: [
+        "Fine-tuning allows you to customize pre-trained language models for specific tasks, domains, or writing styles. But when should you fine-tune versus using prompt engineering or RAG? This guide helps you make that decision.",
+        "We'll cover the entire fine-tuning workflow: dataset preparation, choosing base models, training parameters, and evaluation. You'll learn to fine-tune models using OpenAI's API, Hugging Face, and open-source alternatives.",
+        "The guide includes practical examples: fine-tuning for customer support, domain-specific language (legal, medical), brand voice consistency, and structured output generation. We'll also cover cost optimization and iterative improvement strategies.",
+        "Advanced topics include LoRA (Low-Rank Adaptation), quantization, and deploying fine-tuned models in production with proper versioning and A/B testing.",
+      ],
+      keyPoints: [
+        "Decide when fine-tuning is the right approach vs. RAG or prompt engineering",
+        "Prepare high-quality training datasets and validation sets",
+        "Fine-tune models using OpenAI, Hugging Face, or custom infrastructure",
+        "Evaluate model performance and iterate on improvements",
+        "Deploy fine-tuned models with proper monitoring and version control",
+      ],
+    },
+  },
 ];

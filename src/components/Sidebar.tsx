@@ -56,16 +56,15 @@ const socialItems: SocialItem[] = [
 const Sidebar = () => {
   const location = useLocation();
   const [imageDialogOpen, setImageDialogOpen] = useState(false);
-  const profileImageSrc =
-    "/images/PP.jpg"; 
+  const profileImageSrc = "/images/PP.jpg";
 
   return (
     <>
-      <aside className="w-64 h-screen bg-sidebar fixed left-0 top-0 border-r border-sidebar-border p-6 flex flex-col animate-slide-in">
+      <aside className="hidden md:flex w-64 h-screen bg-sidebar fixed left-0 top-0 border-r border-sidebar-border p-6 flex-col animate-slide-in z-50">
         <div className="mb-8">
           <Link to="/" className="flex items-center gap-2">
             <div
-              className="w-12 h-12 rounded-full overflow-hidden border-2 border-sidebar-primary cursor-pointer hover:scale-105 transition-transform"
+              className="w-12 h-12 rounded-full overflow-hidden border-2 border-sidebar-primary cursor-pointer hover:scale-105 transition-transform flex-shrink-0"
               onClick={() => setImageDialogOpen(true)}
             >
               <img
@@ -75,9 +74,9 @@ const Sidebar = () => {
                 loading="eager"
               />
             </div>
-            <div>
-              <h3 className="font-bold text-base">Sahil Tiwari</h3>
-              <p className="text-xs text-muted-foreground">
+            <div className="min-w-0">
+              <h3 className="font-bold text-base truncate">Sahil Tiwari</h3>
+              <p className="text-xs text-muted-foreground truncate">
                 Software Developer
               </p>
             </div>
