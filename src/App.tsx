@@ -5,6 +5,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/contexts/ThemeContext";
+import Snowfall from "react-snowfall";
 
 // Import pages
 import Home from "@/pages/Home";
@@ -24,6 +25,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <Snowfall />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
